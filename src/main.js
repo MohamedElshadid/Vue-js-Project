@@ -4,7 +4,7 @@ import App from './App.vue'
 import {routes} from './routes'
 
 Vue.use(VueRouter);
-
+import vuetify from './plugins/vuetify' 
 const router = new VueRouter({
   mode:'history',
   routes
@@ -13,5 +13,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router,
+  vuetify,
   render: h => h(App)
 })
